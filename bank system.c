@@ -1,58 +1,74 @@
 #include <stdio.h>
 
-int deposit(int acc_balance,int deposite_amount){
-    if(deposite_amount <= 0){
-        printf("Not valid. Enter valid deposit:\n");
-    } else {
-        acc_balance = acc_balance + deposite_amount;
-        printf("Your account balance is: %d\n", acc_balance);
-    }
-    return acc_balance;
-}
 
-int withdraw(int acc_balance,int withdraw_amount){
-    if(withdraw_amount <= 0 || withdraw_amount > acc_balance){
-        printf("Enter a valid amount:\n");
-    } else {
-        acc_balance = acc_balance - withdraw_amount;
-        printf("Your account balance is: %d\n", acc_balance);
-    }
-    return acc_balance;
-}
+void deposit(float *balance, float amount);
+void withdraw(float *balance, float amount);
+void checkBalance(float balance);
 
-int check_balance(int acc_balance){
-    printf("The balance is: %d\n", acc_balance);
-    return acc_balance;
-}
+int main() {
+    float balance = 0.0, amount;
+    int choice;
 
-int main(){
-    int acc_balance=0;
-    char service;
-    printf("Choose service\n(1.deposit\n2.withdraw\n3.checkbalance): ");
-    scanf(" %c", &service);
+    while (1) {
+        printf("\n==== Simple Banking System ====\n");
+        printf("1. Deposit\n");
+        printf("2. Withdraw\n");
+        printf("3. Check Balance\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
 
-    switch(service){
-        case '1': {
-            int depo;
-            printf("Enter the amount of deposit:\n");
-            scanf("%d", &depo);
-             acc_balance = deposit(acc_balance, depo);  
-            break;
+        switch (choice) {
+            case 1:
+                printf("Enter amount to deposit: ");
+                scanf("%f", &amount);
+                deposit(&balance, amount);
+                break;
+
+            case 2:
+                printf("Enter amount to withdraw: ");
+                scanf("%f", &amount);
+                withdraw(&balance, amount);
+                break;
+
+            case 3:
+                checkBalance(balance);
+                break;
+
+            case 4:
+                printf("Exiting... Thank you!\n");
+                return 0;
+
+            default:
+                printf("Invalid choice! Please try again.\n");
         }
-        case '2': {
-            int withdraw_amount;
-            printf("Enter the withdraw amount:\n");
-            scanf("%d", &withdraw_amount);
-          acc_balance = withdraw(acc_balance, withdraw_amount);  
-            break;
-        }
-        case '3': {
-            acc_balance = check_balance(acc_balance);  
-            break;
-        }
-        default:
-            printf("Choose a valid service!\n");
-            break;
     }
     return 0;
+}
+
+
+void deposit(float *balance, float amount) {
+    if (amount > 0) {
+        *balance += amount;
+        printf("Deposited: %.2f\n", amount);
+    } else {
+        printf("Invalid deposit amount!\n");
+    }
+}
+
+
+void withdraw(float *balance, float amount) {
+    if (amount <= 0) {
+        printf("Invalid withdrawal amount!\n");
+    } else if (amount > *balance) {
+        printf("Insufficient balance!\n");
+    } else {
+        *balance -= amount;
+        printf("Withdrawn: %.2f\n", amount);
+    }
+}
+
+
+void checkBalance(float balance) {
+    printf("Current Balance: %.2f\n", balance);
 }
