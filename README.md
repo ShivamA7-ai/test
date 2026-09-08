@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/ShivamA7-ai/c-programming/tree/master/0048-rotate-image) |
 | [0204-count-primes](https://github.com/ShivamA7-ai/c-programming/tree/master/0204-count-primes) |
 | [3622-check-divisibility-by-digit-sum-and-product](https://github.com/ShivamA7-ai/c-programming/tree/master/3622-check-divisibility-by-digit-sum-and-product) |
+| [3870-count-commas-in-range](https://github.com/ShivamA7-ai/c-programming/tree/master/3870-count-commas-in-range) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/ShivamA7-ai/c-programming/tree/master/3876-construct-uniform-parity-array-ii) |
 ## Array
 |  |
