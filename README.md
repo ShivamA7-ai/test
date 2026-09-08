@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0035-search-insert-position](https://github.com/ShivamA7-ai/c-programming/tree/master/0035-search-insert-position) |
 | [0048-rotate-image](https://github.com/ShivamA7-ai/c-programming/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/ShivamA7-ai/c-programming/tree/master/0054-spiral-matrix) |
+| [0056-merge-intervals](https://github.com/ShivamA7-ai/c-programming/tree/master/0056-merge-intervals) |
 | [0073-set-matrix-zeroes](https://github.com/ShivamA7-ai/c-programming/tree/master/0073-set-matrix-zeroes) |
 | [0118-pascals-triangle](https://github.com/ShivamA7-ai/c-programming/tree/master/0118-pascals-triangle) |
 | [0128-longest-consecutive-sequence](https://github.com/ShivamA7-ai/c-programming/tree/master/0128-longest-consecutive-sequence) |
@@ -92,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/ShivamA7-ai/c-programming/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/ShivamA7-ai/c-programming/tree/master/0018-4sum) |
+| [0056-merge-intervals](https://github.com/ShivamA7-ai/c-programming/tree/master/0056-merge-intervals) |
 | [0229-majority-element-ii](https://github.com/ShivamA7-ai/c-programming/tree/master/0229-majority-element-ii) |
 | [0977-squares-of-a-sorted-array](https://github.com/ShivamA7-ai/c-programming/tree/master/0977-squares-of-a-sorted-array) |
 ## Counting
@@ -131,4 +133,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/ShivamA7-ai/c-programming/tree/master/0204-count-primes) |
+## Quicksort
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/ShivamA7-ai/c-programming/tree/master/0056-merge-intervals) |
 <!---LeetCode Topics End-->
